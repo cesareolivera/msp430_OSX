@@ -10,6 +10,7 @@ $ xcode-select --install
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 $ brew update
+
 ------------------------------
 
 
@@ -18,10 +19,15 @@ $ brew update
 ###############################
 ------------------------------
 $ brew tap sampsyo/mspgcc
+
 $ brew install msp430-libc
+
 $ brew install mspdebug
+
 $ git clone https://github.com/sampsyo/homebrew-mspgcc.git
+
 $ cd homebrew-mspgcc
+
 ------------------------------
 
 
@@ -33,13 +39,21 @@ $ cd homebrew-mspgcc
 - Unzip it on the Downloads directory
 
 $ brew install boost
+
 $ brew install hidapi
+
 $ brew install git
+
 $ sudo cp -R /usr/local/Cellar/hidapi/0.8.0-rc1/include/hidapi/hidapi.h ~/Downloads/MSPDebugStack_OS_Package/ThirdParty/include
+
 $ sudo cp -R /usr/local/Cellar/hidapi/0.8.0-rc1/lib/libhidapi.a ~/Downloads/MSPDebugStack_OS_Package/ThirdParty/lib64
+
 $ cd ~/Downloads/MSPDebugStack_OS_Package
+
 $ make STATIC=1
+
 $ sudo make install
+
 $ mv /usr/local/lib/libmsp430.dylib /usr/local/lib/libmsp430.so
 
 
@@ -48,5 +62,7 @@ $ mv /usr/local/lib/libmsp430.dylib /usr/local/lib/libmsp430.so
 #############
 ------------------------------
 - Download the files execute.sh and hello_msp.c from this source and connect your msp430
+
 $ mspdebug tilib --allow-fw-update
+
 $ ./execute.sh
