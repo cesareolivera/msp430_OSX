@@ -28,6 +28,8 @@ $ git clone https://github.com/sampsyo/homebrew-mspgcc.git
 
 $ cd homebrew-mspgcc
 
+$ ./addlinks
+
 ------------------------------
 
 
