@@ -24,6 +24,8 @@ $ brew install msp430-libc
 
 $ brew install mspdebug
 
+$ brew install git
+
 $ git clone https://github.com/sampsyo/homebrew-mspgcc.git
 
 $ cd homebrew-mspgcc
@@ -43,8 +45,6 @@ $ ./addlinks.sh
 $ brew install boost
 
 $ brew install hidapi
-
-$ brew install git
 
 $ sudo cp -R /usr/local/Cellar/hidapi/0.8.0-rc1/include/hidapi/hidapi.h ~/Downloads/MSPDebugStack_OS_Package/ThirdParty/include
 
