@@ -5,11 +5,11 @@ This is a way to compile and burn C files on your msp430 microcontroller from Ma
 ## Install xcode and homebrew ##
 ################################
 ------------------------------
-$ xcode-select --install
+xcode-select --install
 
-$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-$ brew update
+brew update
 
 ------------------------------
 
