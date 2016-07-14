@@ -67,4 +67,47 @@ sudo mv /usr/local/lib/libmsp430.dylib /usr/local/lib/libmsp430.so
 
 mspdebug tilib --allow-fw-update
 
-./execute.sh
+sh execute.sh
+
+# msp430_Linux
+This is a way to compile and burn C files on your msp430 microcontroller from Linux
+
+######################
+## Install packages ##
+######################
+---------------------------------
+sudo apt-get update
+
+sudo apt-get install build-essential libusb-dev msp430-libc gcc-msp430 libreadline-dev git
+
+----------------------------------
+
+#######################
+## Install LibMSP430 ##
+#######################
+----------------------------------
+- Download from here libmsp430.so to your Downloads directory
+
+cd ~/Downloads
+
+git clone https://github.com/dlbeer/mspdebug.git
+
+cd mspdebug/
+
+make
+
+sudo make install
+
+sudo cp libmsp430.so /usr/lib
+
+----------------------------------
+
+##############################
+## Update Firmware and test ##
+##############################
+----------------------------------
+- Download the files execute.sh and hello_msp.c from this source and connect your msp430
+
+mspdebug tilib -d /dev/ttyACM0 --allow-fw-update
+
+sh execute.sh
