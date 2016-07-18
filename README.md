@@ -39,24 +39,7 @@ cd homebrew-mspgcc
 ## Build libmsp430.so ##
 ########################
 ------------------------------
-- Download MSP Debug Stack Developer's Package from http://www.ti.com/tool/mspds
-- Unzip it on the Downloads directory
-
-brew install boost
-
-brew install hidapi
-
-sudo cp -R /usr/local/Cellar/hidapi/0.8.0-rc1/include/hidapi/hidapi.h ~/Downloads/MSPDebugStack_OS_Package/ThirdParty/include
-
-sudo cp -R /usr/local/Cellar/hidapi/0.8.0-rc1/lib/libhidapi.a ~/Downloads/MSPDebugStack_OS_Package/ThirdParty/lib64
-
-cd ~/Downloads/MSPDebugStack_OS_Package
-
-make STATIC=1
-
-sudo make install
-
-sudo mv /usr/local/lib/libmsp430.dylib /usr/local/lib/libmsp430.so
+- Download libmsp430.so (for MAC OSX) from this source and place it in /usr/local/lib/
 
 
 #############
@@ -86,7 +69,7 @@ sudo apt-get install build-essential libusb-dev msp430-libc gcc-msp430 libreadli
 ## Install LibMSP430 ##
 #######################
 ----------------------------------
-- Download from here libmsp430.so to your Downloads directory
+- Download from here libmsp430.so (for LINUX) to your Downloads directory
 
 cd ~/Downloads
 
